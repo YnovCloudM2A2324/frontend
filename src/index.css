@@ -1,0 +1,167 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Styles de base pour le conteneur */
+div {
+  max-width: 600px; /* Limite la largeur pour assurer la lisibilité */
+  margin: 0 auto; /* Centre le div dans la page */
+  padding: 20px; /* Ajoute un peu d'espace à l'intérieur du div */
+  background: #f9f9f9; /* Couleur de fond douce */
+  border-radius: 10px; /* Arêtes arrondies pour un look moderne */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre douce pour un effet "elevé" */
+}
+
+/* Styles pour le titre H2 */
+h2 {
+  color: #333; /* Couleur de texte sombre pour un bon contraste */
+  margin-bottom: 10px; /* Espace en dessous du titre */
+  text-align: center; /* Centre le titre */
+  font-family: Arial, sans-serif; /* Police de caractère standard et lisible */
+}
+
+/* Styles pour la liste UL */
+ul {
+  list-style: none; /* Aucun puces pour une liste propre */
+  padding: 0; /* Aucun padding pour que la liste démarre au bord */
+  margin: 0; /* Aucune marge pour que la liste démarre au niveau du titre */
+}
+
+/* Styles pour chaque élément de liste LI */
+li {
+  padding: 8px 16px; /* Espace à l'intérieur de chaque élément de liste */
+  background: #fff; /* Couleur de fond pour contraster avec le div */
+  margin-bottom: 6px; /* Espace entre chaque élément de liste */
+  border-radius: 5px; /* Arêtes légèrement arrondies pour les éléments de liste */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Ombre subtile pour la profondeur */
+  transition: transform 0.2s; /* Animation douce pour les interactions */
+}
+
+li:hover {
+  transform: scale(1.02); /* Légèrement plus grand lors du survol pour une interaction */
+  background: #f0f0f0; /* Changement de couleur de fond lors du survol */
+}
+
+/* Règles pour les éléments impairs */
+li:nth-child(odd) {
+  background: #e9e9e9;
+}
+
+li:nth-child(odd):hover {
+  background: #e0e0e0; /* Changement de couleur de fond lors du survol pour éléments impairs */
+}
+
+/* Styles pour les éléments actifs ou cliqués (au besoin) */
+li:active {
+  transform: scale(0.98); /* Rétrécit légèrement lors du clic */
+  background: #dcdcdc; /* Changement de couleur de fond lors du clic */
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto; /* Centrer le formulaire sur la page */
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex; /* Utiliser Flexbox pour aligner les éléments de formulaire */
+  flex-direction: column; /* Les éléments s'empilent verticalement */
+  gap: 15px; /* Espacer les éléments du formulaire */
+}
+
+/* Styles pour l'entrée de fichier */
+input[type="file"] {
+  padding: 10px; /* Espace à l'intérieur du champ */
+  border: 1px solid #ccc; /* Bordure subtile pour le champ de fichier */
+  border-radius: 4px; /* Bordures légèrement arrondies */
+  outline: none; /* Enlève l'outline par défaut pour les interactions */
+}
+
+input[type="file"]:hover,
+input[type="file"]:focus {
+  border-color: #7dabd0; /* Changement de couleur de bordure lors du survol */
+}
+
+/* Styles pour le bouton */
+button {
+  padding: 10px 20px; /* Espace à l'intérieur du bouton */
+  border: none;
+  background-color: #5cacee; /* Couleur de fond bleue pour le bouton */
+  color: white;
+  cursor: pointer; /* Afficher le pointeur de la souris comme un bouton cliquable */
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Transition soignée pour le survol du bouton */
+}
+
+button:hover {
+  background-color: #4a91ca; /* Couleur plus foncée lors du survol */
+}
+
+button:active {
+  transform: translateY(2px); /* Effet de clic en déplaçant le bouton légèrement vers le bas */
+}
