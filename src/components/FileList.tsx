@@ -8,7 +8,9 @@ const FileList: React.FC = () => {
   
       const fetchFiles = async () => {
         try {
-          const response = await fetch('http://localhost:3000/files');
+          const uris = ['http://localhost:3000/files', 'http://localhost:3001/files'];
+          const uri = uris[Math.floor(Math.random() * uris.length)];
+          const response = await fetch(uri);
           const filesData = await response.json();
           setFiles(filesData);
         } catch (error) {
